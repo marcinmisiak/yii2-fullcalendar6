@@ -36,6 +36,7 @@ class Fullcalendar extends Widget
     public $eventResize = '';
     public $eventDidMount = '';
     public $eventContent = '';
+    public $dayCellDidMount = '';
 
     /**
      * @var string|null nazwa globalnej zmiennej JS, do której trafi instancja
@@ -76,7 +77,7 @@ class Fullcalendar extends Widget
         if ($this->events !== null && !isset($options['events'])) {
             $options['events'] = $this->events;
         }
-        foreach (['select', 'eventClick', 'eventDrop', 'eventResize', 'eventDidMount', 'eventContent'] as $cb) {
+        foreach (['select', 'eventClick', 'eventDrop', 'eventResize', 'eventDidMount', 'eventContent', 'dayCellDidMount'] as $cb) {
             if ($this->$cb !== '' && !isset($options[$cb])) {
                 $options[$cb] = new JsExpression($this->$cb);
             }
