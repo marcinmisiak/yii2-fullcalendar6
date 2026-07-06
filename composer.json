@@ -1,0 +1,20 @@
+{
+    "name": "marcinmisiak/yii2-fullcalendar6",
+    "description": "Yii2 widget & asset bundle for FullCalendar v6, vendored locally (no npm-asset/composer version conflicts with other FullCalendar packages)",
+    "type": "yii2-extension",
+    "keywords": ["yii2", "fullcalendar", "calendar"],
+    "homepage": "https://github.com/marcinmisiak/yii2-fullcalendar6",
+    "license": "MIT",
+    "authors": [
+        { "name": "Marcin Misiak" }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "marcinmisiak\\yii2fullcalendar6\\": "src/"
+        }
+    }
+}
